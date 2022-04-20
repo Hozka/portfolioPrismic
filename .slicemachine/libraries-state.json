@@ -1,0 +1,270 @@
+{
+  "slices": {
+    "components": {
+      "project": {
+        "library": "slices",
+        "id": "project",
+        "name": "Project",
+        "description": "Project",
+        "model": {
+          "id": "project",
+          "type": "SharedSlice",
+          "name": "Project",
+          "description": "Project",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Project",
+              "primary": {},
+              "items": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "link": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Link",
+                    "placeholder": "",
+                    "select": null
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "project",
+            "items": [
+              {
+                "title": [
+                  {
+                    "type": "paragraph",
+                    "text": "Eiusmod deserunt ex enim eu aliqua nostrud irure qui incididunt ut tempor adipisicing. Magna officia et consequat duis non cillum sint minim fugiat pariatur ea. Ad exercitation proident proident laboris consectetur cillum duis ipsum magna quis exercitation est voluptate.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Cillum voluptate aliquip aliqua ad voluptate. Tempor quis veniam qui Lorem.",
+                    "spans": []
+                  }
+                ],
+                "link": {
+                  "link_type": "Web",
+                  "url": "https://slicemachine.dev"
+                }
+              },
+              {
+                "title": [
+                  {
+                    "type": "paragraph",
+                    "text": "Enim labore minim adipisicing id enim duis consectetur ea veniam dolore Lorem aute.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Sunt duis anim culpa reprehenderit.",
+                    "spans": []
+                  }
+                ],
+                "link": {
+                  "link_type": "Web",
+                  "url": "https://slicemachine.dev"
+                }
+              },
+              {
+                "title": [
+                  {
+                    "type": "paragraph",
+                    "text": "Dolor sunt do amet deserunt in aliqua id incididunt. Commodo mollit ad ea Lorem ipsum voluptate et veniam duis sunt dolor cupidatat non cillum.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Enim consectetur cillum commodo anim reprehenderit consectetur cillum occaecat pariatur exercitation dolore mollit Lorem sit anim. Ipsum consequat anim laboris. Aliqua mollit fugiat fugiat commodo aliquip ut ut adipisicing.",
+                    "spans": []
+                  }
+                ],
+                "link": {
+                  "link_type": "Web",
+                  "url": "http://twitter.com"
+                }
+              },
+              {
+                "title": [
+                  {
+                    "type": "paragraph",
+                    "text": "Mollit sunt tempor adipisicing in reprehenderit voluptate voluptate eiusmod irure voluptate aute do. Cupidatat quis commodo mollit sint.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Deserunt aute tempor pariatur id esse eu quis proident pariatur officia ipsum. Consectetur mollit voluptate velit enim sit ad non nisi est ullamco elit deserunt tempor.",
+                    "spans": []
+                  }
+                ],
+                "link": {
+                  "link_type": "Web",
+                  "url": "http://twitter.com"
+                }
+              },
+              {
+                "title": [
+                  {
+                    "type": "paragraph",
+                    "text": "Ipsum qui ut culpa ipsum amet eiusmod mollit cupidatat deserunt est nostrud deserunt pariatur. Esse irure labore cupidatat quis nostrud eu cillum. Eu deserunt Lorem ea.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Sit eu in cupidatat mollit officia eu esse occaecat sunt.",
+                    "spans": []
+                  }
+                ],
+                "link": {
+                  "link_type": "Web",
+                  "url": "http://google.com"
+                }
+              },
+              {
+                "title": [
+                  {
+                    "type": "paragraph",
+                    "text": "Sint quis cillum esse anim excepteur.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Irure laborum qui in irure. Do ut ea id occaecat laboris quis qui voluptate laboris culpa enim voluptate est velit nisi.",
+                    "spans": []
+                  }
+                ],
+                "link": {
+                  "link_type": "Web",
+                  "url": "https://slicemachine.dev"
+                }
+              }
+            ],
+            "primary": {}
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {}
+      },
+      "test_home": {
+        "library": "slices",
+        "id": "test_home",
+        "name": "TestHome",
+        "description": "TestHome",
+        "model": {
+          "id": "test_home",
+          "type": "SharedSlice",
+          "name": "TestHome",
+          "description": "TestHome",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "TestHome",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your product"
+                  }
+                },
+                "subtitle": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Subtitle",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "test_home",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Monetize robust interfaces",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Ullamco aliqua pariatur eu aute in labore sunt culpa.",
+                  "spans": []
+                }
+              ],
+              "subtitle": "reintermediate frictionless niches"
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "vue"
+        },
+        "screenshotPaths": {}
+      }
+    }
+  }
+}

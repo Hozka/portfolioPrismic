@@ -1,0 +1,13 @@
+{
+  "_cts": {
+    "home": {}
+  },
+  "slices": {
+    "TestHome": {},
+    "Project": {
+      "default": {
+        "primary": {}
+      }
+    }
+  }
+}

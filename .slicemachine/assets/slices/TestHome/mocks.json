@@ -1,0 +1,25 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "test_home",
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Monetize robust interfaces",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Ullamco aliqua pariatur eu aute in labore sunt culpa.",
+          "spans": []
+        }
+      ],
+      "subtitle": "reintermediate frictionless niches"
+    }
+  }
+]
