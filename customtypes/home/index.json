@@ -12,6 +12,9 @@
           "choices": {
             "project": {
               "type": "SharedSlice"
+            },
+            "header": {
+              "type": "SharedSlice"
             }
           }
         }

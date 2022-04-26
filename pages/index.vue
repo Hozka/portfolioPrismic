@@ -1,30 +1,55 @@
 <template>
-  <div>
-    <the-header></the-header>
-    <projects></projects>
-    <!-- <oneproject v-for="objs in props" :key="objs.message"></oneproject> -->
-    <pre>{{ document }}</pre>
+  <div class="containers">
+    <the-header
+      :name="head.title[0].text"
+      :image="head.imageProfil.url"
+      :descriptionPerson="head.descriptionPerson[0].text"
+      :github="head.linkgithub.url"
+      :linkedin="head.linkedin.url"
+      :text="head.description[0].text"
+    >
+    </the-header>
+    <project-container> </project-container>
+    <div class="trait" id="">
+      <project-card
+        v-for="(project, index) in payload"
+        :key="project.title[0].text + index"
+        :title="project.title[0].text"
+        :description="project.description[0].text"
+        :link="project.link.url"
+      >
+      </project-card>
+    </div>
+    <academics class="trait"> </academics>
   </div>
+
+  <!-- <h4>This is document</h4>
+    <pre>{{ document }}</pre>
+    <h4>This is payload</h4>
+    <pre>{{ payload }}</pre>
+    <h4>This is header elements</h4>
+    <pre>{{ head }}</pre> -->
 </template>
 
 <script>
 import TheHeader from "../components/header/TheHeader.vue";
-import projects from "../components/main/projects.vue";
-
-import oneproject from "../components/main/oneproject.vue";
+import ProjectContainer from "../components/main/ProjectContainer.vue";
+import ProjectCard from "../components/main/ProjectCard.vue";
+import Academics from "../components/main/Academics.vue";
 
 export default {
   name: "IndexPage",
-  components: { TheHeader, projects, oneproject },
+  components: { TheHeader, ProjectContainer, ProjectCard, Academics },
   computed: {
     payload() {
-      // return this.document.results[0].data.slices[0].items;
+      return this.document.results[0].data.slices[0].items;
+    },
+    head() {
+      return this.document.results[0].data.slices[1].primary;
     },
   },
   async asyncData({ $prismic, params, error }) {
-    const document = await $prismic.api.query(
-      this.$prismic.predicates.at("HOME", "project")
-    );
+    const document = await $prismic.api.query();
     if (document) {
       return { document };
     } else {
@@ -34,4 +59,14 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.containers {
+  height: 50em;
+  margin: 100px 150px;
+  /* border: 5px solid black; */
+}
+.trait {
+  border-top: 2px solid #ccc;
+  /* border-bottom: 2px solid #ccc; */
+}
+</style>
