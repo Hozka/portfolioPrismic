@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="academic">
     <h3>Academics</h3>
   </div>
 </template>
@@ -8,4 +8,8 @@
 export default {};
 </script>
 
-<style scoped></style>
+<style scoped>
+.academic {
+  width: 100%;
+}
+</style>

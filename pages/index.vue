@@ -1,5 +1,5 @@
 <template>
-  <div class="containers">
+  <div class="main-container">
     <the-header
       :name="head.title[0].text"
       :image="head.imageProfil.url"
@@ -10,17 +10,17 @@
     >
     </the-header>
     <project-container> </project-container>
-    <div class="trait" id="">
-      <project-card
-        v-for="(project, index) in payload"
-        :key="project.title[0].text + index"
-        :title="project.title[0].text"
-        :description="project.description[0].text"
-        :link="project.link.url"
-      >
-      </project-card>
-    </div>
-    <academics class="trait"> </academics>
+    <div class="trait" id=""></div>
+    <project-card
+      v-for="(project, index) in payload"
+      :key="project.title[0].text + index"
+      :title="project.title[0].text"
+      :description="project.description[0].text"
+      :link="project.link.url"
+    >
+    </project-card>
+    <div class="trait" id=""></div>
+    <academics> </academics>
   </div>
 
   <!-- <h4>This is document</h4>
@@ -60,13 +60,18 @@ export default {
 </script>
 
 <style scoped>
-.containers {
-  height: 50em;
+.main-container {
+  height: auto;
   margin: 100px 150px;
   /* border: 5px solid black; */
+  display: flex;
+  flex-flow: row wrap;
 }
 .trait {
-  border-top: 2px solid #ccc;
+  /* border-top: 2px solid #ccc; */
   /* border-bottom: 2px solid #ccc; */
+  width: 100%;
+  height: 1px;
+  background-color: black;
 }
 </style>
